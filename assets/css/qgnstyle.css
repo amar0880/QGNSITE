@@ -1,0 +1,364 @@
+/* *************Navbar Start ************* */
+
+.navbar {
+    background: linear-gradient(to right, #04143b, #821057);
+  }
+  /* Navbar styles */
+  .navbar-nav .nav-link {
+    transition: all 0.3s ease-in-out;
+filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #d50879;
+    transform: scale(1.1);
+  }
+
+  .sidebar {
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid #a0048b; /* Sidebar line */
+    padding-left: 15px; /* Add some space between the line and text */
+    filter: drop-shadow(5px 2px 3px black);
+  }
+
+  .sidebar:hover {
+    transform: translateX(5px);
+  }
+
+  .logoimg {
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 10px;
+  }
+
+  /* WOW.js fade-in effects */
+  .wow.fadeInUp {
+    visibility: hidden;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .wow.fadeInLeft {
+    visibility: hidden;
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .wow.fadeInRight {
+    visibility: hidden;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+/* **************************** */
+
+
+/***--------------- Footer Start--------------- ***/
+
+.footer {
+    position: relative;
+    background: linear-gradient(to right, #050c30, #821057);    color: #f9f9f9;
+
+    overflow: hidden;
+  }
+  
+  
+  /* Container to ensure content sits above the video and gradient */
+  .footer .container,
+  .footer .copyright {
+    position: relative;
+    z-index: 1;
+  } 
+
+  .footer .col-md-6 .btn-link:hover {
+    color: #e26bfd; /* Darker yellow/orange for hover effect */
+  }
+  
+  /* Social Media Icons */
+
+  .footer .btn.btn-social {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid rgba(256, 256, 256, 0.1);
+    border-radius: 40px;
+    transition: 0.3s;
+    
+  }
+
+  .footer .footer-menu a:hover {
+    color: #c60bc3; /* Hover color for footer links */
+  }
+  
+  /* Footer Copyright Section */
+  .footer .copyright {
+    padding: 25px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+  }
+  
+  .footer .copyright a {
+    color: #158ed4; /* Orange color for the copyright link */
+    text-decoration: none;
+  }
+  
+  .footer .btn.btn-social:hover {
+    color: white;
+    transform: translateY(-5px); /* Adds lift effect on hover */
+    color: var(--primary);
+  }
+   
+  .footer .btn.btn-link {
+    display: block;
+    margin-bottom: 3px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    transition: 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+  } 
+
+  .footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+  }
+  .footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+ 
+    border-right: 1px solid rgba(249, 248, 248, 0.787);
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+  } 
+
+
+  .loc_num_emil{
+    font-size: small;
+  }
+  /* --------Footer End -------------- */
+
+
+
+/*** Service Start ***/
+.service-item {
+    position: relative;
+    height: 400px;
+    padding: 30px 25px;
+    background: #f7faff;
+    box-shadow: 0 0 45px rgba(250, 250, 250, 0.08);
+    transition: .5s;
+
+}
+
+
+.service-item a.btn {
+    position: relative;
+    display: flex;
+    color: var(--primary);
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-item:hover a.btn {
+    color: var(--primary);
+}
+
+.service-item a.btn::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #f81db8;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service-item:hover a.btn::before {
+    width: 100%;
+    background: var(--light);
+}
+
+
+
+.services-section .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.services-section .service-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #7a1055, #f81db8);
+ filter: drop-shadow();
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #fff;
+}
+
+.servicedesc{
+
+  font-size: 15px;
+}
+
+
+.servicesname{
+  font-weight: 700;
+
+  
+}
+
+
+/* Styling for the heading text and lines */
+.heading-line {
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #f81db8;
+  margin-top: 0.3rem; /* Reduced margin-top for closer line */
+}
+
+.heading-line::after {
+  content: "";
+  width: 3rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5rem; /* Reduced margin-bottom for closer line */
+  background-color: #f81db8;
+}
+
+/* --------------Services End ------------- */
+
+
+
+
+/* ************Industries***************** */
+
+.btn-rounded {
+  position: relative;
+  padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
+  display: block;
+  color: #9926f0;
+}
+
+
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+
+.border-primary {
+  border-color: #9926f0 !important;
+}
+
+
+.btn-rounded span {
+  position: absolute;
+  background-color: #9926f0;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+
+.btn-rounded:hover{
+color: white;
+  background-color: #c60bc3;
+}
+
+
+
+.display-3--title{
+  font-weight: 800;
+  color: #9926f0;
+}
+
+.icon{
+  color: #c60bc3;
+  font-size: 30px;
+}
+
+/* ************Industries***************** */
