@@ -1,0 +1,209 @@
+
+/*--------------------------------------------------------------
+13. FunFact
+----------------------------------------------------------------*/
+.ts-funfact.ts-style1 .ts-funfact-number {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 17px;
+  margin-top: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ts-funfact.ts-style1 .ts-funfact-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: -5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ts-funfact.ts-style2 {
+  height: 370px;
+  width: 370px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact {
+  height: 140px;
+  width: 140px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ts-funfact.ts-style2 .ts-funfact-number {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #1868dd;
+}
+
+.ts-funfact.ts-style2 .ts-funfact-title {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact:hover {
+  border-color: #1868dd;
+  background-color: #1868dd;
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact:hover .ts-funfact-number {
+  color: #fff;
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact:hover .ts-funfact-title {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact:first-child {
+  top: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact:nth-child(2) {
+  right: -70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact:nth-child(3) {
+  bottom: -70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.ts-funfact.ts-style2 .ts-single-funfact:nth-child(4) {
+  left: -70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.ts-funfact.ts-style2 .ts-funfact-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 77px;
+  line-height: 1em;
+  color: #1868dd;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+<div class="ts-section-top">
+      <div class="container px-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ts-funfact ts-style2">
+              <div class="ts-single-funfact">
+                <h2 class="ts-funfact-number">Quantum</h2>
+                <div class="ts-funfact-title">AI Ecosystem</div>
+              </div>
+              <div class="ts-single-funfact">
+                <h2 class="ts-funfact-number">Next-Gen</h2>
+                <div class="ts-funfact-title">Data Analytics</div>
+              </div>
+              <div class="ts-single-funfact">
+                <h2 class="ts-funfact-number">CRM</h2>
+                <div class="ts-funfact-title">Software Expansion</div>
+              </div>
+              <div class="ts-single-funfact">
+                <h2 class="ts-funfact-number">Global</h2>
+                <div class="ts-funfact-title">Digital Footprint</div>
+              </div>
+              <!-- Spinning Circle Icon -->
+              <div class="ts-funfact-center">
+                <i class="flaticon-future"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" style="margin-top: 100px">
+            <div class="ts-vertical-middle">
+              <div class="ts-vertical-middle-in">
+                <div class="ts-section-heading ts-style1">
+                  <h2
+                    class="ts-section-title"
+                    style="font-weight: 800; color: #0456d1; font-size: 2rem"
+                  >
+                    Shaping the Future with Technology and Innovation
+                  </h2>
+                  <div class="ts-section-text">
+                    <p>
+                      At Quantum Global Network, we are crafting a tomorrow
+                      where boundaries blur, and technology unites the world.
+                      With a focus on sustainability, AI-driven solutions, and
+                      global collaborations, we are committed to building a
+                      future that inspires and transforms industries.
+                    </p>
+                  </div>
+                  <div class="ts-servide-details-btn ts-left">
+                    <a
+                      href="#"
+                      class="ts-btn ts-style1 ts-size-medium ts-color3"
+                      >Explore Vision <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

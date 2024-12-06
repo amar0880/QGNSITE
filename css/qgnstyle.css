@@ -1,7 +1,20 @@
 /* *************Navbar Start ************* */
 
 .navbar {
-    background: linear-gradient(to right, #04143b, #821057);
+  /* background: linear-gradient(to right, #04143b, #821057);  */
+  background-color: #051c42;
+  }
+  .navbar-nav .nav-link.active{
+    color: #00d4d6;
+  }
+
+
+  .nav-link{
+    color: #ffffff;
+  }
+
+  .dropdown-item:hover{
+    color: #00b2e1;
   }
   /* Navbar styles */
   .navbar-nav .nav-link {
@@ -10,13 +23,13 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
   }
 
   .navbar-nav .nav-link:hover {
-    color: #d50879;
+    color: #00d4d6;
     transform: scale(1.1);
   }
 
   .sidebar {
     transition: transform 0.3s ease-in-out;
-    border-left: 4px solid #a0048b; /* Sidebar line */
+    border-left: 4px solid #00a4d6; /* Sidebar line */
     padding-left: 15px; /* Add some space between the line and text */
     filter: drop-shadow(5px 2px 3px black);
   }
@@ -25,11 +38,82 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
     transform: translateX(5px);
   }
 
+  /* Default Logo and Navbar Styles (Desktop) */
+.logoimg {
+  width: 100px; /* Default size for large screens */
+  transition: transform 0.3s ease-in-out;
+  margin-left: 14px;
+}
+
+.navbar {
+  height: 80px; /* Default navbar height */
+  transition: height 0.3s ease-in-out;
+}
+
+/* Media Query for Ultra Large Screens (3600px or below) */
+@media only screen and (max-width: 3600px) {
   .logoimg {
     width: 100px;
-    transition: transform 0.3s ease-in-out;
-    margin-left: 10px;
   }
+  .navbar {
+    height: 100px;
+    padding: 0px;
+
+  }
+}
+
+/* Media Query for Tablets and Small Laptops (1024px or below) */
+@media only screen and (max-width: 1024px) {
+  .logoimg {
+    width: 70px;
+  }
+  .navbar {
+    height: 65px;
+    padding: 0px;
+
+  }
+}
+
+/* Media Query for Large Phones and Small Tablets (768px or below) */
+@media only screen and (max-width: 768px) {
+  .logoimg {
+    width: 60px;
+    
+  }
+  .navbar {
+    height: 80px;
+    padding: 0px;
+
+  }
+}
+
+/* Media Query for Regular Phones (430px or below) */
+@media only screen and (max-width: 430px) {
+  .logoimg {
+    width: 50px; /* Smaller logo for compact screens */
+    padding: 0px;
+
+  }
+  .navbar {
+    height: 60px; /* Adjusted navbar height */
+    padding: 0px;
+  }
+}
+
+/* Media Query for Very Small Phones (360px or below) */
+@media only screen and (max-width: 360px) {
+  .logoimg {
+    width: 45px; /* Extra small logo for very compact screens */
+  }
+  .navbar {
+    height: 50px; /* Reduced navbar height */
+    padding: 0px;
+
+  }
+}
+
+
+
 
   /* WOW.js fade-in effects */
   .wow.fadeInUp {
@@ -98,7 +182,8 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
 
 .footer {
     position: relative;
-    background: linear-gradient(to right, #050c30, #821057);    color: #f9f9f9;
+    /* background: linear-gradient(to right, #050c30, #821057);    color: #f9f9f9; */
+    background-color: #060f2c;
 
     overflow: hidden;
   }
@@ -112,7 +197,7 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
   } 
 
   .footer .col-md-6 .btn-link:hover {
-    color: #e26bfd; /* Darker yellow/orange for hover effect */
+    color: #0094eb; /* Darker yellow/orange for hover effect */
   }
   
   /* Social Media Icons */
@@ -132,7 +217,7 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
   }
 
   .footer .footer-menu a:hover {
-    color: #c60bc3; /* Hover color for footer links */
+    color: #0094eb; /* Hover color for footer links */
   }
   
   /* Footer Copyright Section */
@@ -143,14 +228,14 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
   }
   
   .footer .copyright a {
-    color: #158ed4; /* Orange color for the copyright link */
+    color: #00d4d6; /* Orange color for the copyright link */
     text-decoration: none;
   }
   
   .footer .btn.btn-social:hover {
-    color: white;
+    color: #0094eb;
     transform: translateY(-5px); /* Adds lift effect on hover */
-    color: var(--primary);
+   
   }
    
   .footer .btn.btn-link {
@@ -158,7 +243,6 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
     margin-bottom: 3px;
     padding: 0;
     text-align: left;
-    color: var(--light);
     font-weight: normal;
     transition: 0.3s;
     color: #ffffff;
@@ -169,6 +253,8 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
   .footer .btn.btn-link:hover {
     letter-spacing: 1px;
     box-shadow: none;
+    color: #0094eb;
+
   }
   .footer .footer-menu a {
     margin-right: 15px;
@@ -187,6 +273,7 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
 
   .loc_num_emil{
     font-size: small;
+    color: #ffffff;
   }
   /* --------Footer End -------------- */
 
@@ -198,7 +285,7 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
     height: 400px;
     padding: 30px 25px;
     background: #f7faff;
-    box-shadow: 0 0 45px rgba(250, 250, 250, 0.08);
+    box-shadow:  2px 2px 5px #060f2c;
     transition: .5s;
 
 }
@@ -362,3 +449,31 @@ color: white;
 }
 
 /* ************Industries***************** */
+/* Hidden Section */
+#hiddenSection {
+  display: none;
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.color-picker {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.color-picker button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.color-picker button:hover {
+  opacity: 0.8;
+}
