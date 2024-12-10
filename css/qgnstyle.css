@@ -2,7 +2,8 @@
 
 .navbar {
   /* background: linear-gradient(to right, #04143b, #821057);  */
-  background-color: #051c42;
+   background: linear-gradient(to right, #051c42, #0c4db5); 
+
   }
   .navbar-nav .nav-link.active{
     color: #00d4d6;
