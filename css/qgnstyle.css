@@ -9,7 +9,8 @@
   }
   
 .navbar {
-    background: linear-gradient(to right, #04143b, #821057);
+    background: linear-gradient(to right, #051c42, #0c4db5); 
+
   }
   /* Navbar styles */
   .navbar-nav .nav-link {
@@ -39,6 +40,30 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
     margin-left: 10px;
   }
 
+/* Media Query for Regular Phones (430px or below) */
+@media only screen and (max-width: 430px) {
+  .logoimg {
+    width: 70px; /* Smaller logo for compact screens */
+    padding: 0px;
+
+  }
+  .navbar {
+    height: 80px; /* Adjusted navbar height */
+    padding: 0px;
+  }
+}
+
+/* Media Query for Very Small Phones (360px or below) */
+@media only screen and (max-width: 360px) {
+  .logoimg {
+    width: 60px; /* Extra small logo for very compact screens */
+  }
+  .navbar {
+    height: 70px; /* Reduced navbar height */
+    padding: 0px;
+
+  }
+}
   /* WOW.js fade-in effects */
   .wow.fadeInUp {
     visibility: hidden;
@@ -112,7 +137,7 @@ filter: drop-shadow(2px 3px 5px rgb(0, 0, 0));
 .footer {
     position: relative;
     /* background: linear-gradient(to right, #050c30, #821057);    color: #f9f9f9; */
-    background-color: #060f2c;
+     background: linear-gradient(#051c42, #072c67); 
 
     overflow: hidden;
   }
