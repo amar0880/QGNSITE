@@ -8,7 +8,7 @@
   .circle {
     width: 60px;
     height: 60px;
-    background-image: url("/assets/img/support-chat.png");
+    /* background-image: url("/assets/img/support-chat.png"); */
     background-size: cover; /* Ensures the image covers the circle completely */
     background-position: center; /* Centers the image inside the circle */
     border-radius: 50%;
@@ -20,10 +20,7 @@
     transition: transform 0.3s;
   }
 
-  .circle:hover {
-    transform: scale(1.1);
-  }
-.floting{
+  .floting{
     width: 60px;
     height: 60px;
     background-size: cover; /* Ensures the image covers the circle completely */
@@ -35,7 +32,16 @@
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
+
   }
+
+
+
+
+  .circle:hover {
+    transform: scale(1.1);
+  }
+
   .icon span {
     font-size: 32px;
     color: #ab0aa5;
